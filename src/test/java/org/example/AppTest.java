@@ -9,11 +9,10 @@ import static org.assertj.core.api.Assertions.assertThat;
  * Unit test for simple App.
  */
 public class AppTest {
-    /**
-	* Rigorous Test :-)
-	*/
+
     @Test
-    public void bla() {
+    public void marco_is_in_the_house() {
+
 	   assertThat(1).isGreaterThanOrEqualTo(0);
     }
 }
