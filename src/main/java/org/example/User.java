@@ -9,13 +9,12 @@ import java.time.LocalDate;
 public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "ID", nullable = false)
     private Long id;
 
-    @Column(name = "NAME", nullable = false)
+
     private String name;
 
-    @Column(name = "BIRTH_DATE")
+    @Column(name = "birth_date")
     private LocalDate birthDate;
 
     public User() {

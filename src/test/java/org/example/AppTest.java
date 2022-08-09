@@ -51,7 +51,7 @@ public class AppTest {
 	   // create a couple of events...
 	   Session session = sessionFactory.openSession();
 	   session.beginTransaction();
-	   session.persist(new User("Marco's Friend", LocalDate.now()));
+	   session.remove(new User("Marco's Friend", LocalDate.now()));
 	   session.getTransaction().commit();
 	   session.close();
 
