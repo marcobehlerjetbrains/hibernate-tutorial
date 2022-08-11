@@ -18,7 +18,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 /**
  * Unit test for simple App.
  */
-public class AppTest {
+public class HibernateFullTest {
 
     private SessionFactory sessionFactory;
 

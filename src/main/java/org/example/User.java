@@ -4,17 +4,13 @@ import jakarta.persistence.*;
 
 import java.time.LocalDate;
 
-@Entity
-@Table(name = "USERS")
-public class User {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
 
+public class User {
+
+    private Long id;
 
     private String name;
 
-    @Column(name = "birth_date")
     private LocalDate birthDate;
 
     public User() {
