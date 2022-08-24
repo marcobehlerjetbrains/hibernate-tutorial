@@ -4,17 +4,22 @@ import jakarta.persistence.*;
 
 import java.time.LocalDate;
 
-
+@Entity
+@Table(name = "USERS")
 public class User {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     private String name;
 
+    @Column(name = "birth_date")
     private LocalDate birthDate;
 
     public User() {
     }
+
 
     public User(String name, LocalDate birthDate) {
 	   this.name = name;
@@ -45,4 +50,12 @@ public class User {
 	   this.birthDate = birthDate;
     }
 
+    @Override
+    public String toString() {
+	   return "User{" +
+			 "id=" + id +
+			 ", name='" + name + '\'' +
+			 ", birthDate=" + birthDate +
+			 '}';
+    }
 }
